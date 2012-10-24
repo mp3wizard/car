@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+/* Developed and copyright by Supawee "Bom" Ippoodom */
+
+*{ margin:0 0; padding:0 0; }
+a img{ border:none; }
+.noinnertext{ font-size:0; line-height:0; overflow:hidden; text-indent:-999em; text-decoration:none; }
+html{ height:100%; }
+body{ 
+	width:100%;
+	height:100%;
+	/* Fixed background to full screen - Start */
+	background:url(../images/bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.png', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+	
+	overflow:hidden;
+	font-family:'Tahoma';
+}
+
+#main-wrapper{ width:1002px; height:100%; min-height:100%; margin:0 auto 0 auto; }
+#wrapper{ width:100%; height:100%; min-height:100%; float:left; display:block; position:relative; overflow:hidden; }
+
+/* Header - Start */
+#wrapper .navigation.topNav{ width:100%; height:81px; position:absolute; top:11px; left:0; background:url(../images/menu_bg.png) no-repeat; }
+#wrapper .navigation.topNav .logo{ width:170px; height:79px; position:absolute; top:2px; left:0; }
+#wrapper .navigation.topNav ul{ width:750px; height:66px; position:absolute; top:6px; left:170px; list-style:none; overflow:hidden; }
+#wrapper .navigation.topNav ul li{ height:100%; position:absolute; top:0; background:url(../images/menu.png) no-repeat; }
+#wrapper .navigation.topNav ul li a{ width:100%; height:100%; float:left; display:block; }
+#wrapper .navigation.topNav ul li.environment{ width:187px; left:0; background-position:0 8px; }
+#wrapper .navigation.topNav ul li.environment:hover, #wrapper .navigation.topNav ul li.environment.current{ background-position:0 -58px; }
+#wrapper .navigation.topNav ul li.safety{ width:190px; left:188px; background-position:-190px 8px; }
+#wrapper .navigation.topNav ul li.safety:hover, #wrapper .navigation.topNav ul li.safety.current{ background-position:-190px -58px; }
+#wrapper .navigation.topNav ul li.education{ width:168px; left:379px; background-position:-383px 8px; }
+#wrapper .navigation.topNav ul li.education:hover, #wrapper .navigation.topNav ul li.education.current{ background-position:-383px -58px; }
+#wrapper .navigation.topNav ul li.philanthropy{ width:202px; left:548px; background-position:-548px 8px; }
+#wrapper .navigation.topNav ul li.philanthropy:hover, #wrapper .navigation.topNav ul li.philanthropy.current{ background-position:-548px -58px; }
+
+#wrapper .social{ width:72px; height:21px; position:absolute; top:107px; right:22px; }
+/* Header - End */
+
+#wrapper .pagewrapper{ width:100%; height:100%; min-height:100%; overflow:auto; }
+#wrapper .page{ width:100%; height:100%; min-height:100%; float:left; display:block; overflow:hidden; position:relative; }
+
+/* Content [portal/index] - Start */
+#wrapper .content{ width:464px; height:357px; position:absolute; top:155px; left:60px; }
+#wrapper .blackboard{ width:181px; height:230px; position:absolute; left:480px; bottom:98px; }
+#wrapper .children{ width:609px; height:545px; position:absolute; right:0; bottom:0; }
+#wrapper .bottomNav{ width:600px; height:105px; position:absolute; right:12px; bottom:19px; }
+#wrapper .bottomNav a{ width:106px; height:105px; position:absolute; top:0; }
+#wrapper .bottomNav a span{ width:30px; height:30px; position:absolute; top:3px; right:0; text-align:center; color:#FFF; text-decoration:none; font-size:20px; }
+#wrapper .bottomNav a:hover span{ color:#8bc8eb; }
+#wrapper .bottomNav .news{ left:0; background:url(../images/btn_news.png) no-repeat; }
+#wrapper .bottomNav .news:hover{ background-position:0 -110px; }
+#wrapper .bottomNav .calendar{ top:-2px; left:112px; background:url(../images/btn_calendar.png) 0 3px no-repeat; }
+#wrapper .bottomNav .calendar:hover{ background-position:0 -108px; }
+#wrapper .bottomNav .enter{ height:110px; top:-7px; right:0; background:url(../images/btn_enter.png) 0 10px no-repeat; }
+#wrapper .bottomNav .enter:hover{ background-position:0 -100px; }
+/* Content [portal/index] - End */
