@@ -373,3 +373,9 @@ footer {
   text-align: center;
   margin-top: 10px;
 }
+footer a {
+  color: #99793c;
+}
+footer a:hover {
+  color: #99793c;
+}

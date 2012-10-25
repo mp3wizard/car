@@ -1,6 +1,6 @@
 @import 'lesshat';
 @import 'fontface';
-
+@footer: #99793c;
 a:focus {outline:none;}
 a::-moz-focus-inner {border:0;}
 
@@ -88,4 +88,8 @@ header { background: url('../img/nav.png') no-repeat; height: 80px; position: re
 	}
 }
 span.inner label { position: absolute; font-family: arial, helvetica; font-style: italic; margin: 5px 10px; font-size: 12px; color: #000; }
-footer { color: #99793c; font-size: 11px; text-align: center; margin-top: 10px; }
+
+footer { color: @footer; font-size: 11px; text-align: center; margin-top: 10px; 
+	a { color: @footer; }
+	a:hover { color: @footer;  }
+}

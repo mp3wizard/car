@@ -108,7 +108,7 @@
 			</article>
 		</div> <!-- #content -->
 		<footer>
-			&copy; 2012 Honda Thailand Foundation. All Rights Reserved.  
+			&copy; 2012 Honda Thailand Foundation. All Rights Reserved.  | <a href="http://www.haii.or.th/" target="_blank">สถาบันสารสนเทศทรัพยากรน้ำและการเกษตร</a> | <a href="http://www.rtrc.in.th" target="_blank">สำนักงานบรรเทาทุกข์และประชานามัยพิทักษ์ สภากาชาดไทย</a>
 		</footer>
 	</div>
 	<script src="js/bootstrap.min.js"></script>
