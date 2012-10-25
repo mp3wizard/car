@@ -156,17 +156,26 @@ header .hand {
 #content nav a.active {
   background: url('../img/subnav.png') no-repeat;
 }
-#content nav a.active {
-  cursor: default;
-}
-#content nav li:nth-child(1) a {
+
+#content nav li a {
   width: 140px;
   height: 50px;
 }
+#content nav li:nth-child(2) a, #content nav li:nth-child(3) a, #content nav li:nth-child(4) a, #content nav li:nth-child(5) a { display: none; }
+
+
 #content nav li:nth-child(1) a:hover,
-#content nav li:nth-child(1) a.active {
-  background-position: -148px -53px;
+.index #content nav li:nth-child(1) a{
+	background: url('../img/subnav.png') no-repeat -148px -53px; 
 }
+ #content nav li:nth-child(6) { float: right; }
+#content nav li:nth-child(6) a:hover,
+.contact #content nav li:nth-child(6) a {
+  background: url('../img/subnav.png') no-repeat -861px -53px;  
+  margin-right: 1px;
+}
+.index #content nav li:nth-child(1) a, .contact #content nav li:nth-child(6) a { cursor: default; }
+
 #content > h2 {
   position: absolute;
   margin: 0;
@@ -174,17 +183,18 @@ header .hand {
   left: 0;
   z-index: 3;
 }
+
 #content > article {
   background: url('../img/bgContent.png') no-repeat;
   width: 1036px;
-  height: 559px;
+  height: 410px;
   margin-top: 460px;
   position: relative;
   left: -17px;
 }
 #content > article section > div > h3,
-#content > article section caption,
-#content > article section > h3 {
+footer section caption,
+#content > article section > h3, footer h3 {
   display: none;
 }
 #content > article #alert {
@@ -301,38 +311,45 @@ header .hand {
   color: #000;
   margin: 15px 0 8px;
 }
+#content > article #news > div a { text-decoration: none; color: #555; }
 #content > article section {
   clear: both;
   position: relative;
 }
-#content > article #emergency {
-  padding: 65px 40px 0;
+footer #emergency {
+  padding: 55px 40px 30px;
 }
-#content > article #emergency #call {
+footer #emergency #call {
   font-family: 'DBLimX';
   font-size: 18px;
   width: 590px;
   color: #333;
   float: left;
 }
-#content > article #emergency #call td {
+footer #emergency #call td {
   vertical-align: middle;
   line-height: 22px;
+  text-align: left;
 }
-#content > article #emergency #call tr > td:nth-child(1) {
+footer #emergency #call tr > td:nth-child(1) {
   padding-left: 20px;
 }
-#content > article #emergency #call a {
+footer #emergency #call a {
   font-size: 24px;
   color: #333;
   text-decoration: none;
 }
-#content > article #emergency #subscribe {
+footer #emergency #call .org a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+footer #emergency #subscribe {
   float: right;
   width: 335px;
   padding-top: 5px;
 }
-#content > article #emergency #subscribe input#email {
+footer #emergency #subscribe input#email {
   width: 194px;
   height: 30px;
   padding: 0 10px 5px;
@@ -347,7 +364,7 @@ header .hand {
   background-clip: padding-box;
   margin: 0;
 }
-#content > article #emergency #subscribe input#submit {
+footer #emergency #subscribe input#submit {
   width: 113px;
   height: 35px;
   border: none;
@@ -355,8 +372,8 @@ header .hand {
   text-indent: -1000em;
   text-transform: capitalize;
 }
-#content > article #emergency #subscribe input#submit:hover,
-#content > article #emergency #subscribe input#submit:active {
+footer #emergency #subscribe input#submit:hover,
+footer #emergency #subscribe input#submit:active {
   background-position: 0 -35px;
 }
 span.inner label {
@@ -368,10 +385,13 @@ span.inner label {
   color: #000;
 }
 footer {
+ background: url('../img/bgFooter.png') no-repeat top center;
   color: #99793c;
   font-size: 11px;
   text-align: center;
-  margin-top: 10px;
+  width: 1036px;
+  position: relative; left: -17px;
+  height: 200px;
 }
 footer a {
   color: #99793c;
@@ -379,3 +399,21 @@ footer a {
 footer a:hover {
   color: #99793c;
 }
+
+/* Contact Page */
+input:focus, textarea:focus {
+  outline-color: transparent;
+  outline-style: none;
+  -moz-appearance:none;
+}
+html.contact { background-position: center -170px; }
+.contact body { background: url('../img/bgBody_contact.jpg') no-repeat center -170px; }
+.contact #content > article { background: url('../img/bgContactus.jpg') no-repeat center top; width: 1036px; height: 272px; margin-top: 300px; padding-top: 75px;  }
+.contact article table { margin-left: 310px; }
+.contact article table tr > td:nth-child(1) { font-family: 'DBLimX'; color: #fd8800; font-size: 19px; padding-right: 20px; }
+.contact article table tr > td:nth-child(2) { width: 600px; }
+.contact article table tr:nth-child(3) > td:nth-child(1)  { vertical-align: top; padding-top: 10px; }
+#contact_name, #contact_title { width: 309px; height: 30px; background: url('../img/bgInput.png') no-repeat; border: none; padding: 0 10px 7px; margin: 0; box-shadow: none; }
+#contact_message { width: 309px; height: 85px; padding: 5px 10px 7px;  background: url('../img/bgTextarea.png') no-repeat; border: none; margin: 0; resize: none; box-shadow: none;}
+.message {  display: inline-block; font-family: 'DBLimX'; font-size: 16px; padding-left: 10px;}
+.error { color: #ff0000; }
