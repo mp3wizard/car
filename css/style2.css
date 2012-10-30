@@ -185,13 +185,13 @@ header .hand {
 }
 
 #content > article {
-  background: url('../img/bgContent.png') no-repeat;
   width: 1036px;
   height: 410px;
-  margin-top: 460px;
+  
   position: relative;
   left: -17px;
 }
+.home #content > article {  background: url('../img/bgContent.png') no-repeat; margin-top: 460px; }
 #content > article section > div > h3,
 footer section caption,
 #content > article section > h3, footer h3 {
@@ -417,3 +417,8 @@ html.contact { background-position: center -170px; }
 #contact_message { width: 309px; height: 85px; padding: 5px 10px 7px;  background: url('../img/bgTextarea.png') no-repeat; border: none; margin: 0; resize: none; box-shadow: none;}
 .message {  display: inline-block; font-family: 'DBLimX'; font-size: 16px; padding-left: 10px;}
 .error { color: #ff0000; }
+
+/* About us Page */
+html.about { background-position: center -170px; }
+.about body { background: url('../img/bgBody_contact.jpg') no-repeat center -170px; }
+.about #content > article { background: url('../img/bgContactus.jpg') no-repeat center top; width: 1036px; height: 272px; margin-top: 300px; padding-top: 75px;  }
