@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+/* Developed and copyright by Supawee "Bom" Ippoodom */
+
+*{ margin:0 0; padding:0 0; }
+a img{ border:none; }
+.noinnertext{ font-size:0; line-height:0; overflow:hidden; text-indent:-999em; text-decoration:none; }
+body{ font-family:'Tahoma'; min-width: 1002px; }
+
+/* Header - Start */
+.navigation-wrapper{ width:1002px; height:81px; position:fixed; top:11px; left: 50%; margin-left: -501px; z-index:400; }
+.navigation.topNav{ width:100%; height:81px; position:absolute; top:0; left:0; background:url(../images/menu_bg.png) no-repeat; }
+.navigation.topNav .logo{ width:170px; height:79px; position:absolute; top:2px; left:0; }
+.navigation.topNav ul{ width:750px; height:66px; position:absolute; top:6px; left:170px; list-style:none; overflow:hidden; }
+.navigation.topNav ul li{ height:100%; position:absolute; top:0; background:url(../images/menu.png) no-repeat; }
+.navigation.topNav ul li a{ width:100%; height:100%; float:left; display:block; }
+.navigation.topNav ul li.environment{ width:187px; left:0; background-position:0 8px; }
+.navigation.topNav ul li.environment:hover, .navigation.topNav ul li.environment.current{ background-position:0 -58px; }
+.navigation.topNav ul li.safety{ width:190px; left:188px; background-position:-190px 8px; }
+.navigation.topNav ul li.safety:hover, .navigation.topNav ul li.safety.current{ background-position:-190px -58px; }
+.navigation.topNav ul li.education{ width:168px; left:379px; background-position:-383px 8px; }
+.navigation.topNav ul li.education:hover, .navigation.topNav ul li.education.current{ background-position:-383px -58px; }
+.navigation.topNav ul li.philanthropy{ width:202px; left:548px; background-position:-548px 8px; }
+.navigation.topNav ul li.philanthropy:hover, .navigation.topNav ul li.philanthropy.current{ background-position:-548px -58px; }
+
+.social{ width:72px; height:21px; position:absolute; top:107px; right:22px; display:none; }
+/* Header - End */
+
+/* Default stylesheet - Start */
+#viewport{ height:100%; min-height:100%; position:absolute; top:0; left:0; overflow-y:auto; overflow-x:hidden; }
+.page{ width:41px; height:41px; position:absolute; top:40%; z-index:500; }
+.page.goLeft{ left:80px; background:url(../images/page_nav_left.png) no-repeat; }
+.page.goRight{ right:80px; background:url(../images/page_nav_right.png) no-repeat; }
+
+#wrapper{ height:100%; min-height:100%; float:left; display:block; position:relative; }
+
+/* Page Navigation - Start */
+#page-wrapper{ width:100%; height:100%; min-height:100%; float:left; display:block; }
+/* Page Navigation - End */
+
+.menu{ width:100%; height:100%; margin:0 auto; padding:0; min-height: 700px; float:left; display:block; list-style:none; }
+.blog{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+/* Default stylesheet - End */
+
+.page-environment{ float:left; display:block; }
+
+/* Blog [.environment .blog.index] - Start */
+.page-environment .blog.index{
+	background:#fff url(../images/bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.png', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+}
+.blog.index .content-wrapper{ width:1002px; min-width:1002px; margin:0 auto; overflow:hidden; position:relative; }
+.blog.index .content{ width:464px; height:357px; position:absolute; left:50%; top: 150px; margin: 0 0 0 -440px; z-index:5; }
+.blog.index .child-large{ width:368px; height:545px; position:absolute; left:50%; bottom:0; margin:0 0 0 130px; z-index:4; }
+.blog.index .children{ width:309px; height:311px; position:absolute; left:50%; bottom:20px; margin:0 0 0 -100px; z-index:3; }
+.blog.index .tree{ width:355px; height:456px; position:absolute; left:50%; bottom:150px; margin:0 0 0 65px; z-index:2; }
+/*.page-environment.smallScreen .blog.index { overflow: hidden; }
+.page-environment.smallScreen .blog.index .children { bottom: 50%; margin-bottom: -450px;}*/
+.blog.index .bottomNav{ width:1002px; height:106px; position:absolute; bottom:30px; z-index:300; left: 50%; margin-left: -501px; }
+.blog.index .bottomNav > a{ width:105px; height:106px; position:absolute; top:0; }
+.blog.index .bottomNav > a span{ width:30px; height:30px; position:absolute; top:5px; right:0; text-align:center; color:#FFF; text-decoration:none; font-size:16px; }
+
+/* Environment - Start */
+.page-environment .blog.index .bottomNav .news{ height:100px; left:380px; background:url(../images/btn_environment_news.png) no-repeat; }
+.page-environment .blog.index .bottomNav .news:hover, .page-environment .blog.index .bottomNav .page-environment.news.active{ height:106px; background-position:0 -100px; }
+.page-environment .blog.index .bottomNav .news:hover span, .blog.index .bottomNav .page-environment.news.active span{ top:8px; color:#8bc8eb; }
+.page-environment .blog.index .bottomNav .calendar{ height:100px; top:-2px; left:495px; background:url(../images/btn_environment_activity.png) 0 0 no-repeat; }
+.page-environment .blog.index .bottomNav .calendar:hover{ height:106px; background-position:0 -100px; }
+.page-environment .blog.index .bottomNav .calendar:hover span{ top:8px; color:#8bc8eb; }
+.page-environment .blog.index .bottomNav .enter{ width:106px; height:110px; top:-7px; right:140px; background:url(../images/btn_environment_enter1.png) 0 0 no-repeat; }
+.page-environment .blog.index .bottomNav .enter2{ width:106px; height:110px; top:-7px; right:20px; background:url(../images/btn_environment_enter2.png) 0 0 no-repeat; }
+.page-environment .blog.index .bottomNav .newslist .newsnav.goLeft{ background:url(../images/arrow_education.png) 0 0 no-repeat; }
+.page-environment .blog.index .bottomNav .newslist .newsnav.goRight{ background:url(../images/arrow_education.png) -22px 0 no-repeat; }
+/* Environment - End */
+
+/* Safety - Start */
+.page-safety .blog.index .bottomNav .news{ height:100px; left:380px; background:url(../images/btn_safety_news.png) no-repeat; }
+.page-safety .blog.index .bottomNav .news:hover, .page-safety .blog.index .bottomNav .page-safety.news.active{ height:106px; background-position:0 -100px; }
+.page-safety .blog.index .bottomNav .news:hover span, .blog.index .bottomNav .page-safety.news.active span{ top:8px; color:#fdc40b; }
+.page-safety .blog.index .bottomNav .calendar{ height:100px; top:-2px; left:495px; background:url(../images/btn_safety_activity.png) 0 0 no-repeat; }
+.page-safety .blog.index .bottomNav .calendar:hover{ height:106px; background-position:0 -100px; }
+.page-safety .blog.index .bottomNav .calendar:hover span{ top:8px; color:#fdc40b; }
+.page-safety .blog.index .bottomNav .enter{ width:106px; height:110px; top:-7px; right:140px; background:url(../images/btn_safety_enter1.png) 0 0 no-repeat; }
+.page-safety .blog.index .bottomNav .enter2{ width:106px; height:110px; top:-7px; right:20px; background:url(../images/btn_safety_enter2.png) 0 0 no-repeat; }
+.page-safety .blog.index .bottomNav .newslist .newsnav.goLeft{ background:url(../images/arrow_safety.png) 0 0 no-repeat; }
+.page-safety .blog.index .bottomNav .newslist .newsnav.goRight{ background:url(../images/arrow_safety.png) -22px 0 no-repeat; }
+/* Safety - End */
+
+/* Safety - Start */
+.page-education .blog.index .bottomNav .news{ height:100px; left:380px; background:url(../images/btn_education_news.png) no-repeat; }
+.page-education .blog.index .bottomNav .news:hover, .page-education .blog.index .bottomNav .page-education.news.active{ height:106px; background-position:0 -100px; }
+.page-education .blog.index .bottomNav .news:hover span, .blog.index .bottomNav .page-education.news.active span{ top:8px; color:#fdc40b; }
+.page-education .blog.index .bottomNav .calendar{ height:100px; top:-2px; left:495px; background:url(../images/btn_education_activity.png) 0 0 no-repeat; }
+.page-education .blog.index .bottomNav .calendar:hover{ height:106px; background-position:0 -100px; }
+.page-education .blog.index .bottomNav .calendar:hover span{ top:8px; color:#fdc40b; }
+.page-education .blog.index .bottomNav .enter{ width:106px; height:110px; top:-7px; right:140px; background:url(../images/btn_education_enter1.png) 0 0 no-repeat; }
+.page-education .blog.index .bottomNav .enter2{ width:106px;  height:110px; top:-7px; right:20px; background:url(../images/btn_education_enter2.png) 0 0 no-repeat; }
+.page-education .blog.index .bottomNav .newslist .newsnav.goLeft{ background:url(../images/arrow_education.png) 0 0 no-repeat; }
+.page-education .blog.index .bottomNav .newslist .newsnav.goRight{ background:url(../images/arrow_education.png) -22px 0 no-repeat; }
+/* Safety - End */
+
+/* Philanthropy - Start */
+.page-philanthropy .blog.index .bottomNav .news{ height:100px; left:380px; background:url(../images/btn_philanthropy_news.png) no-repeat; }
+.page-philanthropy .blog.index .bottomNav .news:hover, .page-philanthropy .blog.index .bottomNav .page-philanthropy.news.active{ height:106px; background-position:0 -100px; }
+.page-philanthropy .blog.index .bottomNav .news:hover span, .page-philanthropy .blog.index .bottomNav .news.active span{ top:8px; color:#fdc40b; }
+.page-philanthropy .blog.index .bottomNav .calendar{ height:100px; top:-2px; left:495px; background:url(../images/btn_philanthropy_activity.png) 0 0 no-repeat; }
+.page-philanthropy .blog.index .bottomNav .calendar:hover{ height:106px; background-position:0 -100px; }
+.page-philanthropy .blog.index .bottomNav .calendar:hover span{ top:8px; color:#fdc40b; }
+.page-philanthropy .blog.index .bottomNav .enter{ width:106px; height:110px; top:-7px; right:140px; background:url(../images/btn_philanthropy_enter1.png) 0 0 no-repeat; }
+.page-philanthropy .blog.index .bottomNav .enter2{ width:106px; height:110px; top:-7px; right:20px; background:url(../images/btn_philanthropy_enter2.png) 0 0 no-repeat; }
+.page-philanthropy .blog.index .bottomNav .newslist .newsnav.goLeft{ background:url(../images/arrow_philanthrophy.png) 0 0 no-repeat; }
+.page-philanthropy .blog.index .bottomNav .newslist .newsnav.goRight{ background:url(../images/arrow_philanthrophy.png) -22px 0 no-repeat; }
+/* Philanthropy - End */
+
+
+	/* News list - Start */
+	.newslist{ width:252px; height:85px; position:absolute; top:-75px; left:300px; background:url(../images/newslist_bg.png) no-repeat; display:none; }
+	.newslist .newsnav{ width:21px; height:21px; position:absolute; top:20px; }
+	.newslist .newsnav.goLeft{ left:-10px; }
+	.newslist .newsnav.goRight{ right:-10px; }
+	.newslist .wrapper{ width:222px; height:45px; position:absolute; top:5px; left:14px; overflow:hidden; }
+	.newslist .wrapper ul{ height:100%; position:absolute; top:0; list-style:none; }
+	.newslist .wrapper ul li{ width:222px; height:100%; float:left; display:block; }
+	.newslist .wrapper ul li .thumbnail{ width:45px; height:45px; float:left; display:block; margin-right:10px; }
+	.newslist .wrapper ul li .title{ width:167px; height:auto; float:left; display:block; margin-top:5px; font-size:12px; text-decoration:none; color:#383d3f; }
+	/* News list - End */
+	
+/* Blog [.envitonment .blog.index] - End */
+
+.blog .tab{ width:416px; height:47px; position:absolute; top:-46px; left:0; }
+.blog .tab a{ width:104px; height:47px; float:left; display:block; background:url(../images/tab_bg.png) no-repeat; }
+.blog .tab .about{ background-position:0 0; }
+.blog .tab .about:hover, .blog .tab .about.tab-active{ background-position:0 -47px; }
+.blog .tab .gallery{ background-position:-104px 0; }
+.blog .tab .gallery:hover, .blog .tab .gallery.tab-active{ background-position:-104px -47px; }
+.blog .tab .news{ background-position:-208px 0; }
+.blog .tab .news:hover, .blog .tab .news.tab-active{ background-position:-208px -47px; }
+.blog .tab .activity{ background-position:-312px 0; }
+.blog .tab .activity:hover, .blog .tab .activity.tab-active{ background-position:-312px -47px; }
+
+/* Blog [.page-environment #section-news] - Start */
+.page-environment .blog{
+	background:url(../images/news_bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/news_bg.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/news_bg.png', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+}
+
+.blog .child{ width:444px; height:423px; position:absolute; left:10%; bottom:0; margin-top:0; z-index:3; }
+.blog .grass{ width:501px; height:100%; position:absolute; margin-left: -530px; bottom:0; left: 50%; z-index:1; }
+.blog .child img, .blog .grass img {  position: absolute; left: 0; bottom: 0; }
+
+/* Content [.page-environment #section-news .blog .content.news] - Start */
+.blog .content.news{ width:803px; height:454px; position:absolute; left: 50%; top:0; margin-left: -400px; background:url(../images/content_bg.png) no-repeat; z-index:3; }
+.blog .content.news .btn-toIndex{ width:40px; height:39px; position:absolute; top:0; right:-40px; }
+.blog .content.news .blog-title{ width:auto; height:auto; position:absolute; top:35px; left:30px; font-size:32px; color:#b5b5b5; }
+.blog .content.news .list{ width:420px; height:350px; position:absolute; top:32px; right:31px; border:1px solid #dbdada; padding:20px 20px; overflow:hidden; }
+.blog .content.news .list ul{ width:100%; height:100%; float:left; display:block; list-style:none; }
+.blog .content.news .list ul li{ width:100%; height:auto; float:left; display:block; position:relative; margin-bottom:10px; }
+.blog .content.news .list ul li .thumbnail{ width:185px; height:105px; float:left; display:block; margin-right:9px; }
+.blog .content.news .list ul li .info{ width:225px; height:105px; float:left; display:block; }
+.blog .content.news .list ul li .info .date{ font-size:12px; color:#44abf1; margin-bottom:5px; }
+.blog .content.news .list ul li .info .title{ font-size:16px; color:#555; margin-bottom:10px; }
+.blog .content.news .list ul li .info .sdesc{ font-size:12px; color:#888; }
+/* Content [.page-environment #section-news .blog .content.news] - End */
+
+/* Content [.page-environment #section-news .blog .content.activity] - Start */
+.blog .content.activity{ width:803px; height:454px; position:absolute; left: 50%; top:0; margin-left: -400px; background:url(../images/content_bg.png) no-repeat; z-index:2; }
+.blog .content.activity .btn-toIndex{ width:40px; height:39px; position:absolute; top:0; right:-40px; }
+.blog .content.activity .blog-title{ width:auto; height:auto; position:absolute; top:35px; left:30px; font-size:32px; color:#b5b5b5; }
+.blog .content.activity .list{ width:468px; height:350px; position:absolute; top:32px; right:31px; }
+.blog .content.activity .list ul{ width:100%; height:100%; float:left; display:block; list-style:none; }
+.blog .content.activity .list ul li{ width:184px; height:350px; float:left; display:block; position:relative; border:1px solid #dbdada; margin-right:8px; padding:20px 20px; }
+.blog .content.activity .list ul li .logo{ width:84px; height:49px; position:absolute; top:-9px; left:-6px; }
+.blog .content.activity .list ul li .thumbnail{ width:100%; height:105px; float:left; display:block; }
+.blog .content.activity .list ul li .info{ width:100%; height:auto; float:left; display:block; margin-top:20px; }
+.blog .content.activity .list ul li .info .title{ width:100%; height:auto; float:left; display:block; font-size:16px; color:#555; }
+.blog .content.activity .list ul li .info .sdesc{ width:100%; height:auto; float:left; display:block; font-size:12px; color:#888; margin-top:15px; }
+.blog .content.activity .list ul li .btn-readmore{ width:75px; height:24px; position:absolute; left:18px; bottom:12px; }
+/* Content [.page-environment #section-news .blog .content.activity] - End */
+
+/* Blog [Safety] - Start */
+.page-safety{ float:left; display:block; }
+.page-safety .blog.index{
+	background:#fff url(../images/safety_bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/safety_bg.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/safety_bg.png', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+}
+.page-safety .blog.index .content{ width:845px; height:327px; position:absolute; top:150px; left:50%; background:url(../images/safety_content_bg.png) no-repeat; }
+.page-safety .blog.index .content img{ width:678px; height:243px; position:absolute; top:20px; left:110px; }
+.page-safety .blog.index .car{ width:254px; height:117px; position:absolute; left:15%; bottom:50px; }
+.page-safety .blog.index .bike{ width:160px; height:180px; position:absolute; left:20%; bottom:20px; }
+.page-safety .blog.news{
+	background:url(../images/safe_act_bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/safe_act_bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/safe_act_bg.jpg', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+}
+.page-safety .blog{
+	background:url(../images/safe_act_bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/safe_act_bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/safe_act_bg.jpg', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+}
+/* Blog [Safety] - End */
+
+/* Blog [Education] - Start */
+.page-education{ float:left; display:block; }
+.page-education .blog.index{
+	background:#fff url(../images/education_bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/education_bg.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/education_bg.png', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+}
+.page-education .blog.index .content{ width:644px; height:282px; position:absolute; top:150px; left:50%; margin-left:-300px; }
+.page-education .blog.index .children{ width:695px; height:394px; position:absolute; top:50%; left:50%; margin-top:50px; margin-left:-600px; }
+.page-education .blog.index .board{ width:143px; height:154px; position:absolute; top:50%; left:50%; margin-top:150px; margin-left:200px; z-index:3; }
+.page-education .blog.index .tree{ width:284px; height:314px; position:absolute; top:50%; left:50%; margin-top:-5px; margin-left:215px; z-index:2; }
+.page-education .blog{
+	background:url(../images/edu_act_bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/edu_act_bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/edu_act_bg.jpg', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+}
+/* Blog [Education] - End */
+
+/* Blog [Philanthropy] - Start */
+.page-philanthropy{ float:left; display:block; }
+.page-philanthropy .blog.index{
+	background:#fff url(../images/philanthropy_bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/philanthropy_bg.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/philanthropy_bg.png', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+}
+.page-philanthropy .blog.index .content{ width:534px; height:309px; position:absolute; top:150px; left:50%; margin-left:-400px; }
+.page-philanthropy .blog.index .hand{ width:514px; height:306px; position:absolute; top:25%; right:0; }
+.page-philanthropy .blog{
+	background:url(../images/philan_act_bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* Fixed background to full screen - End */
+	
+	/* Fixed the IE problem - Start */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/philan_act_bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/philan_act_bg.jpg', sizingMethod='scale')";
+	/* Fixed the IE problem - End */
+}
+/* Blog [Philanthropy] - End */
+
+.footer{ width:280px; height:10px; position:fixed; left: 50%; margin-left: -140px; bottom:20px; z-index:400; }
