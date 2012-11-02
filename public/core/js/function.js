@@ -128,6 +128,7 @@ $(document).ready(function(){
 			$(this).css('top', pos+'px');
 		});
 		/* Set position for active parallax - End */
+		
 	});
 	/* In case window is resize - End */
 	
@@ -255,7 +256,6 @@ $(document).ready(function(){
 			state = false;
 		}
 	});
-
 });
 
 var state = false;

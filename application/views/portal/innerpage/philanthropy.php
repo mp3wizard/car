@@ -1,6 +1,7 @@
 	<!-- Philanthropy - Start -->
 	<ol class="curtains menu page-philanthropy">
 	    <li id="section-index" class="blog index">
+	    	<div class="bg"><img src="images/philanthropy_bg.jpg" alt="" /></div>
 			<!-- Blog "index" - Start -->
 			<div class="content parallax" rel="1.08">
 				<img src="images/philanthropy_content.png" alt="" />
@@ -51,7 +52,7 @@
 			<!-- Blog "index" - End -->
 	    </li>
 	    <li id="section-news" class="blog">
-	    
+	    	<div class="bg"><img src="images/philan_act_bg.jpg" alt="" /></div>
 	    	<!-- News - Start -->
 	    	<div class="content news parallax" rel="0.2">
 		    	<a href="javascript:void(0);" class="btn-toIndex curtain-links"><img src="images/btn_close.png" alt="" /></a>

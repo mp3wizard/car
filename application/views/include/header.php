@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <base href="<?php echo base_url().'public/core/'; ?>" />
+<meta name = "viewport" content = "width=1024, maximum-scale=0.75">
 <title>Honda</title>
 
 <!-- jQuery init - Start -->
@@ -23,12 +24,14 @@
 <!-- Parallax - End -->
 <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
 <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+
 <!--<script src="https://github.com/protonet/jquery.inview/raw/master/jquery.inview.min.js"></script>
 <script type="text/javascript" src="js/jquery.scrollParallax.js"></script>-->
 <!-- Parallax - End -->
-
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <script type="text/javascript" src="js/function.js"></script>
+
 </head>
 
 <body>

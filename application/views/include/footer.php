@@ -1,5 +1,5 @@
 		<!-- Footer - Start -->
-		<div class="footer"><img src="images/copyright.png" alt="" /></div>
+		<div class="footer">&copy; 2012 Honda Thailand Foundation. All Rights Reserved.</div>
 		<!-- Footer - End -->
 		
 	</div>

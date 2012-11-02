@@ -2,6 +2,7 @@
 	<ol class="curtains menu page-education">
 	    <li id="section-index" class="blog index">
 			<!-- Blog "index" - Start -->
+			<div class="bg"><img src="images/education_bg.jpg" alt="" /></div>
 			<div class="content parallax" rel="1.08">
 				<img src="images/education_content.png" alt="" />
 			</div>
@@ -57,7 +58,7 @@
 			<!-- Blog "index" - End -->
 	    </li>
 	    <li id="section-news" class="blog">
-	    
+	    	<div class="bg"><img src="images/edu_act_bg.jpg" alt="" /></div>
 	    	<!-- News - Start -->
 	    	<div class="content news parallax" rel="0.2">
 		    	<a href="#education" class="btn-toIndex curtain-links"><img src="images/btn_close.png" alt="" /></a>

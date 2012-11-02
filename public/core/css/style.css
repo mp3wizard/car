@@ -2,13 +2,54 @@
 /* CSS Document */
 /* Developed and copyright by Supawee "Bom" Ippoodom */
 
+@font-face {
+  font-family: 'DBOzoneMed';
+  src: url('db_lim_medium_x-webfont.eot');
+  src: local('☺'), url('db_lim_medium_x-webfont.woff') format('woff'), url('db_lim_medium_x-webfont.ttf') format('truetype'), url('db_lim_medium_x-webfont.svgz#webfontlmIiEh8P') format('svg'), url('db_lim_medium_x-webfont.svg#webfontlmIiEh8P') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DBOzone';
+  src: url('db_lim_x-webfont.eot');
+  src: local('☺'), url('db_lim_x-webfont.woff') format('woff'), url('db_lim_x-webfont.ttf') format('truetype'), url('db_lim_x-webfont.svgz#webfontVprF7BHC') format('svg'), url('db_lim_x-webfont.svg#webfontVprF7BHC') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html, html a { 
+	/* Reduce blur on icons in chrome, opera, safari and ios. */
+	/* This is hacky & bad. Maybe possible for firefox, not sure yet. */
+  -webkit-font-smoothing: antialiased;
+  -o-transform: scale(1); 
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+a:focus {outline:none;}
+a::-moz-focus-inner {border:0;}
+
 *{ margin:0 0; padding:0 0; }
 a img{ border:none; }
-.noinnertext{ font-size:0; line-height:0; overflow:hidden; text-indent:-999em; text-decoration:none; }
+.noinnertext {
+	text-align: left;
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    text-indent: -1000em;
+    /* IE 6/7 fallback */
+    *text-indent: -9999em;
+}
+
+.noinnertext:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+body, html { width: 100%; height: 100% }
 body{ font-family:'Tahoma'; min-width: 1002px; }
 
 /* Header - Start */
-.navigation-wrapper{ width:1002px; height:81px; position:fixed; top:11px; left: 50%; margin-left: -501px; z-index:400; }
+.navigation-wrapper{ width:1002px; height:81px; position:fixed; top:11px; left: 50%; margin-left: -508px; z-index:400; }
+.safari .navigation-wrapper { margin-left: -501px; }
 .navigation.topNav{ width:100%; height:81px; position:absolute; top:0; left:0; background:url(../images/menu_bg.png) no-repeat; }
 .navigation.topNav .logo{ width:170px; height:79px; position:absolute; top:2px; left:0; }
 .navigation.topNav ul{ width:750px; height:66px; position:absolute; top:6px; left:170px; list-style:none; overflow:hidden; }
@@ -28,9 +69,9 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 
 /* Default stylesheet - Start */
 #viewport{ height:100%; min-height:100%; position:absolute; top:0; left:0; overflow-y:auto; overflow-x:hidden; }
-.page{ width:41px; height:41px; position:absolute; top:40%; z-index:500; }
-.page.goLeft{ left:80px; background:url(../images/page_nav_left.png) no-repeat; }
-.page.goRight{ right:80px; background:url(../images/page_nav_right.png) no-repeat; }
+.page{ width:41px; height:41px; position:absolute; top:50%; margin-top: -20px; z-index:500; left: 50%;}
+.page.goLeft{background:url(../images/page_nav_left.png) no-repeat; margin-left: -507px; }
+.page.goRight{  background:url(../images/page_nav_right.png) no-repeat; margin-left: 452px; }
 
 #wrapper{ height:100%; min-height:100%; float:left; display:block; position:relative; }
 
@@ -53,7 +94,7 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 
 /* Blog [.environment .blog.index] - Start */
 .page-environment .blog.index{
-	background:#fff url(../images/bg.png) no-repeat center center fixed;
+	background:#fff url(../images/bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -73,16 +114,16 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 /*.page-environment.smallScreen .blog.index { overflow: hidden; }
 .page-environment.smallScreen .blog.index .children { bottom: 50%; margin-bottom: -450px;}*/
 .blog.index .bottomNav{ width:1002px; height:106px; position:absolute; bottom:30px; z-index:300; left: 50%; margin-left: -501px; }
-.blog.index .bottomNav > a{ width:105px; height:106px; position:absolute; top:0; }
-.blog.index .bottomNav > a span{ width:30px; height:30px; position:absolute; top:5px; right:0; text-align:center; color:#FFF; text-decoration:none; font-size:16px; }
+.blog.index .bottomNav > a{ width:105px; height:106px; position:absolute; top:0; text-decoration: none; }
+.blog.index .bottomNav > a span{ width:30px; height:30px; position:absolute; top:0; right:0; text-align:center; font-family: 'DBOzone'; color:#fff; text-decoration:none; font-size:24px; line-height: 30px; font-weight: normal;  }
 
 /* Environment - Start */
 .page-environment .blog.index .bottomNav .news{ height:100px; left:380px; background:url(../images/btn_environment_news.png) no-repeat; }
 .page-environment .blog.index .bottomNav .news:hover, .page-environment .blog.index .bottomNav .page-environment.news.active{ height:106px; background-position:0 -100px; }
-.page-environment .blog.index .bottomNav .news:hover span, .blog.index .bottomNav .page-environment.news.active span{ top:8px; color:#8bc8eb; }
+.page-environment .blog.index .bottomNav .news:hover span, .blog.index .bottomNav .page-environment.news.active span{ top:4px; color:#8bc8eb; }
 .page-environment .blog.index .bottomNav .calendar{ height:100px; top:-2px; left:495px; background:url(../images/btn_environment_activity.png) 0 0 no-repeat; }
 .page-environment .blog.index .bottomNav .calendar:hover{ height:106px; background-position:0 -100px; }
-.page-environment .blog.index .bottomNav .calendar:hover span{ top:8px; color:#8bc8eb; }
+.page-environment .blog.index .bottomNav .calendar:hover span{ top:4px; color:#8bc8eb; }
 .page-environment .blog.index .bottomNav .enter{ width:106px; height:110px; top:-7px; right:140px; background:url(../images/btn_environment_enter1.png) 0 0 no-repeat; }
 .page-environment .blog.index .bottomNav .enter2{ width:106px; height:110px; top:-7px; right:20px; background:url(../images/btn_environment_enter2.png) 0 0 no-repeat; }
 .page-environment .blog.index .bottomNav .newslist .newsnav.goLeft{ background:url(../images/arrow_education.png) 0 0 no-repeat; }
@@ -92,10 +133,10 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 /* Safety - Start */
 .page-safety .blog.index .bottomNav .news{ height:100px; left:380px; background:url(../images/btn_safety_news.png) no-repeat; }
 .page-safety .blog.index .bottomNav .news:hover, .page-safety .blog.index .bottomNav .page-safety.news.active{ height:106px; background-position:0 -100px; }
-.page-safety .blog.index .bottomNav .news:hover span, .blog.index .bottomNav .page-safety.news.active span{ top:8px; color:#fdc40b; }
+.page-safety .blog.index .bottomNav .news:hover span, .blog.index .bottomNav .page-safety.news.active span{ top:4px; color:#fdc40b; }
 .page-safety .blog.index .bottomNav .calendar{ height:100px; top:-2px; left:495px; background:url(../images/btn_safety_activity.png) 0 0 no-repeat; }
 .page-safety .blog.index .bottomNav .calendar:hover{ height:106px; background-position:0 -100px; }
-.page-safety .blog.index .bottomNav .calendar:hover span{ top:8px; color:#fdc40b; }
+.page-safety .blog.index .bottomNav .calendar:hover span{ top:4px; color:#fdc40b; }
 .page-safety .blog.index .bottomNav .enter{ width:106px; height:110px; top:-7px; right:140px; background:url(../images/btn_safety_enter1.png) 0 0 no-repeat; }
 .page-safety .blog.index .bottomNav .enter2{ width:106px; height:110px; top:-7px; right:20px; background:url(../images/btn_safety_enter2.png) 0 0 no-repeat; }
 .page-safety .blog.index .bottomNav .newslist .newsnav.goLeft{ background:url(../images/arrow_safety.png) 0 0 no-repeat; }
@@ -105,10 +146,10 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 /* Safety - Start */
 .page-education .blog.index .bottomNav .news{ height:100px; left:380px; background:url(../images/btn_education_news.png) no-repeat; }
 .page-education .blog.index .bottomNav .news:hover, .page-education .blog.index .bottomNav .page-education.news.active{ height:106px; background-position:0 -100px; }
-.page-education .blog.index .bottomNav .news:hover span, .blog.index .bottomNav .page-education.news.active span{ top:8px; color:#fdc40b; }
+.page-education .blog.index .bottomNav .news:hover span, .blog.index .bottomNav .page-education.news.active span{ top:4px; color:#fdc40b; }
 .page-education .blog.index .bottomNav .calendar{ height:100px; top:-2px; left:495px; background:url(../images/btn_education_activity.png) 0 0 no-repeat; }
 .page-education .blog.index .bottomNav .calendar:hover{ height:106px; background-position:0 -100px; }
-.page-education .blog.index .bottomNav .calendar:hover span{ top:8px; color:#fdc40b; }
+.page-education .blog.index .bottomNav .calendar:hover span{ top:4px; color:#fdc40b; }
 .page-education .blog.index .bottomNav .enter{ width:106px; height:110px; top:-7px; right:140px; background:url(../images/btn_education_enter1.png) 0 0 no-repeat; }
 .page-education .blog.index .bottomNav .enter2{ width:106px;  height:110px; top:-7px; right:20px; background:url(../images/btn_education_enter2.png) 0 0 no-repeat; }
 .page-education .blog.index .bottomNav .newslist .newsnav.goLeft{ background:url(../images/arrow_education.png) 0 0 no-repeat; }
@@ -118,10 +159,10 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 /* Philanthropy - Start */
 .page-philanthropy .blog.index .bottomNav .news{ height:100px; left:380px; background:url(../images/btn_philanthropy_news.png) no-repeat; }
 .page-philanthropy .blog.index .bottomNav .news:hover, .page-philanthropy .blog.index .bottomNav .page-philanthropy.news.active{ height:106px; background-position:0 -100px; }
-.page-philanthropy .blog.index .bottomNav .news:hover span, .page-philanthropy .blog.index .bottomNav .news.active span{ top:8px; color:#fdc40b; }
+.page-philanthropy .blog.index .bottomNav .news:hover span, .page-philanthropy .blog.index .bottomNav .news.active span{ top:4px; color:#fdc40b; }
 .page-philanthropy .blog.index .bottomNav .calendar{ height:100px; top:-2px; left:495px; background:url(../images/btn_philanthropy_activity.png) 0 0 no-repeat; }
 .page-philanthropy .blog.index .bottomNav .calendar:hover{ height:106px; background-position:0 -100px; }
-.page-philanthropy .blog.index .bottomNav .calendar:hover span{ top:8px; color:#fdc40b; }
+.page-philanthropy .blog.index .bottomNav .calendar:hover span{ top:4px; color:#fdc40b; }
 .page-philanthropy .blog.index .bottomNav .enter{ width:106px; height:110px; top:-7px; right:140px; background:url(../images/btn_philanthropy_enter1.png) 0 0 no-repeat; }
 .page-philanthropy .blog.index .bottomNav .enter2{ width:106px; height:110px; top:-7px; right:20px; background:url(../images/btn_philanthropy_enter2.png) 0 0 no-repeat; }
 .page-philanthropy .blog.index .bottomNav .newslist .newsnav.goLeft{ background:url(../images/arrow_philanthrophy.png) 0 0 no-repeat; }
@@ -139,6 +180,7 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 	.newslist .wrapper ul li{ width:222px; height:100%; float:left; display:block; }
 	.newslist .wrapper ul li .thumbnail{ width:45px; height:45px; float:left; display:block; margin-right:10px; }
 	.newslist .wrapper ul li .title{ width:167px; height:auto; float:left; display:block; margin-top:5px; font-size:12px; text-decoration:none; color:#383d3f; }
+	.newslist a { text-decoration: none; }
 	/* News list - End */
 	
 /* Blog [.envitonment .blog.index] - End */
@@ -156,7 +198,7 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 
 /* Blog [.page-environment #section-news] - Start */
 .page-environment .blog{
-	background:url(../images/news_bg.png) no-repeat center center fixed;
+	background:url(../images/news_bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -169,7 +211,7 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 	/* Fixed the IE problem - End */
 }
 
-.blog .child{ width:444px; height:423px; position:absolute; left:10%; bottom:0; margin-top:0; z-index:3; }
+.blog .child{ width:444px; height:423px; position:absolute; left:50%; margin-left: -570px; bottom:0; margin-top:0; z-index:3; }
 .blog .grass{ width:501px; height:100%; position:absolute; margin-left: -530px; bottom:0; left: 50%; z-index:1; }
 .blog .child img, .blog .grass img {  position: absolute; left: 0; bottom: 0; }
 
@@ -205,7 +247,7 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 /* Blog [Safety] - Start */
 .page-safety{ float:left; display:block; }
 .page-safety .blog.index{
-	background:#fff url(../images/safety_bg.png) no-repeat center center fixed;
+	background:#fff url(../images/safety_bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -252,7 +294,7 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 /* Blog [Education] - Start */
 .page-education{ float:left; display:block; }
 .page-education .blog.index{
-	background:#fff url(../images/education_bg.png) no-repeat center center fixed;
+	background:#fff url(../images/education_bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -286,7 +328,7 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 /* Blog [Philanthropy] - Start */
 .page-philanthropy{ float:left; display:block; }
 .page-philanthropy .blog.index{
-	background:#fff url(../images/philanthropy_bg.png) no-repeat center center fixed;
+	background:#fff url(../images/philanthropy_bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -315,4 +357,9 @@ body{ font-family:'Tahoma'; min-width: 1002px; }
 }
 /* Blog [Philanthropy] - End */
 
-.footer{ width:280px; height:10px; position:fixed; left: 50%; margin-left: -140px; bottom:20px; z-index:400; }
+.footer{ width:300px; height:10px; position:fixed; left: 50%; margin-left: -150px; bottom:15px; z-index:400; font-size: 11px; color: #b5b5b5; font-family: Helvetica, Arial; text-shadow: 0 -1px 0 rgba(0,0,0,.35); white-space: nowrap; }
+
+/* Fix IE8 bug */
+.bg {position:absolute; top:-50%; 	left:-50%; 	width:200%; 	height:200%;	display: none; }
+.ie8 .bg, .ipad .bg { display: block; }
+.bg img {	position:absolute; 	top:0; 	left:0; 	right:0; 	bottom:0; 	margin:auto; 	min-width:50%;	min-height:50%;}

@@ -2,6 +2,7 @@
 	<ol class="curtains menu page-environment">
 	    <li id="section-index" class="blog index active">
 			<!-- Blog "index" - Start -->
+			<div class="bg"><img src="images/bg.jpg" alt="" /></div>
 			<div class="content"><img src="images/content_home.png" alt="" /></div>
 			<div class="child-large parallax" rel="0.1"><img src="images/child_large.png" alt="" /></div>
 			<div class="children parallax" rel="0.4"><img src="images/children.png" alt="" /></div>
@@ -51,6 +52,7 @@
 	    <li id="section-news" class="blog">
 	    
 	    	<!-- News - Start -->
+	    	<div class="bg"><img src="images/news_bg.jpg" alt="" /></div>
 	    	<div class="content news parallax" rel="0.2">
 		    	<a href="javascript:void(0);" class="btn-toIndex curtain-links"><img src="images/btn_close.png" alt="" /></a>
 				<div class="tab">
